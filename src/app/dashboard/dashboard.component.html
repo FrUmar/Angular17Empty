@@ -1,0 +1,17 @@
+
+@defer {<app-home></app-home> }
+@placeholder(minimum 1000ms) {<p>dashboard works!</p>}
+<div class="flex" id="wrapper">
+    <app-header-navbar></app-header-navbar>
+    <app-main-navbar></app-main-navbar>
+    <app-category-navbar></app-category-navbar>
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <router-outlet></router-outlet>
+        <a href="https://wa.me/+923364165424" target="_blank">
+          <img src="./assets/Images/whatsapp.png" class="fixed-bottom whatsapp">
+        </a>
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </div>
